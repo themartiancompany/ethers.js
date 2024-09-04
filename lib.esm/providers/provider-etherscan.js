@@ -137,6 +137,8 @@ export class EtherscanProvider extends AbstractProvider {
                 return "https:/\/api-optimistic.etherscan.io";
             case "optimism-goerli":
                 return "https:/\/api-goerli-optimistic.etherscan.io";
+            case "gnosis":
+                return "https:/\/api.gnosisscan.io";
             default:
         }
         assertArgument(false, "unsupported network", "network", this.network);
